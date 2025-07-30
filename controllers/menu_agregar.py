@@ -12,8 +12,8 @@ from controllers import (
     menu_editar,
     menu_guardar,
     menu_ver
-
 )
+import controllers.menu_principal as menu
 def menu_agregar1():
     while True:
         terminal.limpiar()
@@ -33,9 +33,9 @@ def menu_agregar1():
         elif opcion == "2":
             return menu_ver()
         elif opcion=="3":
-            return menu_buscar()
+            pass
         elif opcion == "4":
-            return menu_editar()
+            return menu.menu_principal()
         elif opcion == "8":
             print("Saliendo del programa ")
             break
